@@ -6,15 +6,15 @@ from Group_Music_Probot.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SU
 
 logging.basicConfig(level=logging.INFO)
 
-GROUP_MUSIC_PROBOT_IMG = "https://telegra.ph/file/70008107133ae8f4d1f1f.jpg"
+GROUP_MUSIC_PROBOT_IMG = "https://telegra.ph/file/b1a5fbf825adad025a0bd.jpg"
 
 @Client.on_message(filters.command("start") & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_photo(GROUP_MUSIC_PROBOT_IMG)
     await message.reply_text(
-        f"""**Hey, I'm {BOT_NAME} 🎵
+        f"""**Hey, I'm {BOT_NAME} 🧚
         
-I am Group Music Probot, I Am an Advance And Powerful Telegram Groups Voice Chat Music Bot.
+I Am an Advance And Powerful Telegram Groups Voice Chat Music Bot.
 
 Try the /help Command below to know my abilities.
         """,
